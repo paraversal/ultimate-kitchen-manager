@@ -1,0 +1,11 @@
+[project]
+name = "ultimate-kitchen-manager"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "flet-cli>=0.82.2",
+    "flet-desktop>=0.82.2",
+    "pandas>=3.0.1",
+]
