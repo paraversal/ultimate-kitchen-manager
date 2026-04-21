@@ -16,6 +16,9 @@ The smallest unit inside the UKM is the *ingredient*. An ingredient is any food 
 
 ## Recipes
 
+> # NOTE!
+> I think this section needs some cleaning up. Firstly, I think needing to bend everything to the notion of a recicpe might be inflexible, and secondly, I think plan types require some clean up too. consider this section highly WIP
+
 The way we specify the foods the kitchen may offer for any event is using *recipes*. "Recipes" can be both recipes in the common sense (like Chili sin Carne, Sweet Potato Curry, Lentil Soup), but they are also how we specify the foods we want to serve that don't need any preparation (like the aforementioned cereals, which are simply bought and laid on the breakfast buffet).
 
 
