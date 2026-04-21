@@ -61,7 +61,7 @@ The hunger modifier is an upwards corrective scalar applied to the main courses 
 Another feature of the UKM is the ability to track the foods we have in our possession. There are two types of warehousing processes:
 
 - **Stockstaking** (Inventur)
-    - Stocktaking essentially start with a blank slate; each item is scanned in; after each item has been scanned a summary is shown of how the inventory compares to the inventory before
+    - Stocktaking starts with a blank slate. Each item is scanned in; after this has been completed, a summary is shown of how the (new) inventory state compares to the inventory state before
     - The array of items scanned during stocktaking **replaces** the items in the database; the database state before the process is deleted after confirmation
 - **Goods in/goods out** (Wareneingang, -ausgang)
     - Goods in/goods out is the process of adding/removing a single item or an array of items to/from the database without affecting the rest of the database
@@ -77,20 +77,20 @@ The hierarchy is as follows:
 **Main dishes > Helper Snacks > Spreads > Breakfast**
 
 > # Example
-> Say we have Tzatziki as a spread (for which we need 2 cucumber), Cucumber salad as a main (for which we need 2 cucumbers), and then also cucumber as a breakfast item (3 cucumbers); and say we have 3 cucumbers
+> Say we have Tzatziki as a spread (for which we need 2 cucumbers), Cucumber salad as a main (for which we need two cucumbers), and then also cucumber as a breakfast item (three cucumbers); and say we currently have three cucumbers in our possession.
 >
 > The UKM would then show: 
 > - Cucumber salad: 2/2 cucumbers
 > - Tzatziki: 1/2 cucumbers
 > - Breakfast: 0/3 cucumbers
 > 
-> If we were then to enter another receipt of goods for 2 cucumbers, it would accordingly show:
+> If we were then to create another *goods in* process for two cucumbers (i.e., buy two more cucumbers and enter them into the system), it would accordingly show:
 > 
 > - Cucumber salad: 2/2 cucumbers
 > - Tzatziki: 2/2 cucumbers
 > - Breakfast: 1/3 cucumbers
 
-So for any ingredient, each recipe group successively gets the chance to resereve ingredients. This ensures that the most important recipes are successfully procured first
+For any ingredient, each recipe group successively gets the chance to resereve ingredients. This ensures that the most important recipes get their successful procurement status first.
 
 For two recipes of the same priority level, for now: UNDOCUMENTED (for later: either recipe with higher amount gets filled first, or vice versa)
 
