@@ -3,7 +3,7 @@
 - `defaults/` → default configuration for new events
 - `extract/` → recipe, ingredient extraction from the old kitchen Excel
 - `src/`, `templates/` source for the flask app
-- ![Handbook](./handbook.md): WIP specification
+- [Handbook](handbook.md): WIP specification
 
 # Usage
 
