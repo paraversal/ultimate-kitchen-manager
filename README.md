@@ -7,10 +7,10 @@
 
 # Usage
 
-- install https://astral.sh/
+- install https://astral.sh/uv
 - `git clone` the repo
 - cd `ultimate-kitchen-manager` 
-- run `uv run flask run` to start the flask development server (run the application; doesn't do much for now)
+- run `uv run flask run` to start the flask development server (run the application; doesn't do much for now since there is barely any code)
 - run `uv run er.py` to generate er diagram
 
 -------
