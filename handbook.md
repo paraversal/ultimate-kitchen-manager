@@ -4,7 +4,7 @@ Sketch for the business logic of the Ultimate Kitchen Manager (UKM)
 
 ## Static vs. Event Data
 
-Data in the UKM lives in two distinct sectors. The *static* sector holds information that isn't specific to one events. It's the general database where our knowledge about the kitchen is stored persistently. It includes ingredients, stores, and recipes (along with some additional information which we will get to later). The *event* sector, on the other hand, holds information about specific events. This includes data about the participation numbers, as well as which recipes are cooked, and when.
+Data in the UKM lives in two distinct sectors. The *static* sector holds information that isn't specific to one event. It's the general database where our knowledge about the kitchen is stored persistently. It includes ingredients, stores, and recipes (along with some additional information which we will get to later). The *event* sector, on the other hand, holds information about specific events. This includes data about the participation numbers, as well as which recipes are cooked, and when.
 
 > ## Technical Note: Table namespaces
 > *All data, both static data as well as data about every event, is stored in a single monolithic SQLite database. To achieve separation between different concerns, all tables are namespaced. Static tables start with `STATIC_` and event-specific tables start with `EVENT_[event name]`, where `event name` is the namespace for the respective event. To get all event namespace, query the `STATIC_event_namespaces` table.*
